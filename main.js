@@ -16,12 +16,16 @@ const mensagemEmpate = `Valor de A: ${valorA.value} <br> Valor de B: ${valorB.va
         conteinerMensagemSucesso.style.backgroundColor = 'rgba(28, 187, 28)';
         conteinerMensagemSucesso.style.display = 'block';
 
-
+        valorA.value = '';
+        valorB.value = '';
     }else if(valorA.value == valorB.value){
         const conteinerMensagemEmpate = document.querySelector('.success-message')
         conteinerMensagemEmpate.innerHTML = mensagemEmpate;
         conteinerMensagemEmpate.style.backgroundColor = '#fdcf00';
         conteinerMensagemEmpate.style.display = 'block';
+            
+        valorA.value = '';
+        valorB.value = '';
     }else{
         const conteinerMensagemErro = document.querySelector('.success-message')
         conteinerMensagemErro.innerHTML = mensagemErro;
