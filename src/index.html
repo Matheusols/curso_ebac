@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="@@ENDERECO_DO_CSS">
+</head>
+<body>
+    <main>
+        <h1>Dados para RPG</h1>
+        <form id="form-sorteador">
+            <div>
+                <label for="numero-maximo">Selecione o dado a ser utilizado</label>
+            </div>
+            <button type="submit" id="dado1">D4</button>
+            <button type="submit" id="dado2">D6</button>
+            <button type="submit" id="dado3">D8</button>
+            <button type="submit" id="dado4">D10</button>
+            <button type="submit" id="dado5">D12</button>
+            <button type="submit" id="dado6">D20</button>
+            <button type="submit" id="dado7">D100</button>
+        </form>
+        <div class="resultado">
+            O numero sorteado foi: <span id="resultado-valor"></span>
+        </div>
+    </main>
+<script src="@@ENDERECO_DO_JS"></script>
+</body>
+</html>
